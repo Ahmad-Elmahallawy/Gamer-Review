@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="HomeCSS.css">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <title>Home</title>
 </head>
+
 <body>
     <div class="navContainer">
         <div class="logoDiv">
@@ -28,7 +31,7 @@
         </div>
         <div class="buttons">
             <div class="checkContainer">
-               <button class="check"><a class="check"href="AllGames.html"> Check a reviewed game </a></button>
+                <button class="check"><a class="check" href="AllGames.html"> Check a reviewed game </a></button>
             </div>
             <div class="signupContainer">
                 <button class="signup"> Sign-Up</button>
@@ -37,21 +40,25 @@
     </div>
     <hr>
     <div class="blocks1">
-      <div class="block1">
-          <h2 class="subhead">Our Reviews</h2>
-          <p class="desc">We gather reviews from the <b>biggest</b> gaming websites and compannies to make it easier on you! These ratings are summarized and our feedback is given for every game. Reviews are from April 2022</p>
-      </div>
-      <div class="reviewContainer">
-        <img  class="reviewImage"src="/Images/review.png" alt="Review">
-    </div>
+        <div class="block1">
+            <h2 class="subhead">Our Reviews</h2>
+            <p class="desc">We gather reviews from the <b>biggest</b> gaming websites and compannies to make it easier
+                on you! These ratings are summarized and our feedback is given for every game. Reviews are from April
+                2022</p>
+        </div>
+        <div class="reviewContainer">
+            <img class="reviewImage" src="/Images/review.png" alt="Review">
+        </div>
     </div>
     <div class="blocks2">
         <div class="businessContainer">
-            <img class="business"src="/Images/businessman.png" alt="offer">
+            <img class="business" src="/Images/businessman.png" alt="offer">
         </div>
         <div class="block2">
             <h2 class="subhead">Our Services</h2>
-            <p class="desc">We give feedback for the top games to make your choices easier when buying the game you love! In addition, we provide external sources which rated these games such as IGN and more. You can also check what the game is played on and see if you can play it on the console you have</p>
+            <p class="desc">We give feedback for the top games to make your choices easier when buying the game you
+                love! In addition, we provide external sources which rated these games such as IGN and more. You can
+                also check what the game is played on and see if you can play it on the console you have</p>
         </div>
     </div>
     <br>
@@ -63,15 +70,15 @@
     <div class="consolesContainer">
         <div class="xbox">
             <h2 class="xboxTitle">Xbox</h2>
-            <img class="xboxLogo"src="/Images/Xbox.png" alt="">
+            <img class="xboxLogo" src="/Images/Xbox.png" alt="">
         </div>
         <div class="playstation">
             <h2 class="playstationTitle">PS</h2>
-            <img class="playstationLogo"src="/Images/playstation.png" alt="">
+            <img class="playstationLogo" src="/Images/playstation.png" alt="">
         </div>
         <div class="PC">
             <h2 class="PCTitle">PC</h2>
-            <img class="PCLogo"src="/Images/PC.png" alt="">
+            <img class="PCLogo" src="/Images/PC.png" alt="">
         </div>
     </div>
     <br>
@@ -81,7 +88,7 @@
         <div class="finalHeader">
             <p class="picsTitle">Some of the games available:</p>
         </div>
-    
+
         <div class="slideshowContainer">
             <div class="slides fade">
                 <div class="gameTitle">
@@ -99,7 +106,8 @@
                 <div class="gameTitle">
                     Call Of Duty: Modern Warfare 2019
                 </div>
-                <img src="/Games pics/call-of-duty-modern-warfare-in-gray-smoke-poster-1w0e7kb6vp40a2nx.jpg" style="width:80%">
+                <img src="/Games pics/call-of-duty-modern-warfare-in-gray-smoke-poster-1w0e7kb6vp40a2nx.jpg"
+                    style="width:80%">
             </div>
             <div class="slides fade">
                 <div class="gameTitle">
@@ -110,12 +118,12 @@
         </div>
         <br>
 
-         <div style="text-align:center">
-            <span class="dot"></span> 
-            <span class="dot"></span> 
+        <div style="text-align:center">
             <span class="dot"></span>
             <span class="dot"></span>
-        
+            <span class="dot"></span>
+            <span class="dot"></span>
+
         </div>
     </div>
 
@@ -161,28 +169,29 @@
                 </div>
             </div>
         </div>
-   </footer>
-<script>
-    let slideIndex = 0;
-showSlides();
+    </footer>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slides");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 4000); // Change image every 2 seconds
-}
-</script>
-  
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+
 </body>
+
 </html>

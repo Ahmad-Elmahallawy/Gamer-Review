@@ -1,12 +1,14 @@
-*{
+* {
     padding: 0px 0px;
     margin: 0px 0px;
 }
-.nopadding{
+
+.nopadding {
     padding: 0px 0px;
     margin: 0px 0px;
 }
-.PSHeader{
+
+.PSHeader {
     text-align: center;
     font-size: 50px;
     font-style: italic;
@@ -15,64 +17,71 @@
     margin-top: 20px;
 }
 
-.PSGames{
+.PSGames {
     border: 1px solid grey;
-    height:50vh;
+    height: 50vh;
 }
-.gameImageContainer{
+
+.gameImageContainer {
     position: relative;
-    height:50%;
+    height: 50%;
     width: 100%;
     display: flex;
     margin: auto;
     justify-content: center;
 }
-.gameImage{
+
+.gameImage {
     position: absolute;
-    height:100%;
+    height: 100%;
     width: 100%;
     text-align: center;
 
 }
-.gameTitleContainer{
+
+.gameTitleContainer {
     height: 30%;
 }
-.gameName{
-    height:100%;
+
+.gameName {
+    height: 100%;
     text-align: center;
     font-size: 1.5vw;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
 }
-.gamePrice{
-    margin-top:2vh;
+
+.gamePrice {
+    margin-top: 2vh;
 }
-.price{
+
+.price {
     text-align: center;
     font-size: 2vw;
     font-weight: bold;
 }
 
-.rate{
+.rate {
     position: relative;
     display: flex;
     gap: 0.8vw;
     align-items: center;
     justify-content: center;
-    
-    
+
+
 }
-.rateText{
-    font-size:1.5vw;
+
+.rateText {
+    font-size: 1.5vw;
     font-weight: bold;
-    
+
 }
 
-.checked{
-    color:orange;
+.checked {
+    color: orange;
 }
 
-.XboxHeader{
+.XboxHeader {
     text-align: center;
     font-size: 50px;
     font-style: italic;
@@ -80,32 +89,36 @@
     background-color: darkgreen;
     margin-top: 20px;
 }
+
 .gameImageContainer {
     position: relative;
 
-  }
+}
+
 .image {
     display: block;
     width: 100%;
-  }
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     bottom: 100%;
     left: 0;
     right: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     overflow: hidden;
     width: 100%;
-    height:0;
+    height: 0;
     transition: .5s ease;
-  }
-  .gameImageContainer:hover .overlay{
+}
+
+.gameImageContainer:hover .overlay {
     bottom: 0;
     height: 100%;
-  }
+}
 
 
-  .text {
+.text {
     color: white;
     font-size: 24px;
     position: absolute;
@@ -115,4 +128,4 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
