@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+}
+li a{
+    text-decoration: none;
+    color: white;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    margin: 0px;
+    width: 100%; 
+    height: 100%;
+}
+li a:hover{
+    color: white;
+}
+.navMenu ul{
+    display: flex;  
+    align-items: center; 
+    height: 100%; 
+}
+.navMenu ul li:hover{
+    background-color: #ff1616;
+}
+.navMenu li{
+    list-style-type: none;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-size: 25px;
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.navMenu{
+    right:3%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+
+}
+.navContainer{
+    position:relative;
+    background-color: #24262b;
+    height: 100px;
+}
+.logoDiv{
+    height:100%;
+    width: 20vw;
+    width: 150px;
+    padding:0px 0px;
+    margin-left: 50px;
+}
+.logo{
+    height: 100%;
+}
+.Combination{
+    height: 60vh;
+    background-image: url(/Images/background.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+.welcomeMsg{
+    animation: text-load 1600ms ease-out; 
+    height:100px;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+.welcome{
+    font-size: 6vw;
+    color: white;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+span{
+    color: #ff1616;
+} 
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2vw;
+    animation: button-animation 1600ms ease-out;
+    
+}
+@keyframes button-animation{
+   
+    0%{
+        transform: translateY(350%);
+    }
+    100%{
+        transform: translateY(0)
+    }
+}
+.check{
+  background: transparent;
+  font-size: 2.5vw;
+  color: #ffff;
+  border: 1px solid #ffff;
+  border-radius: 4px;
+  cursor:pointer;
+  text-decoration: none;
+  
+}
+.signup{
+    background: transparent;
+    font-size: 2.5vw;
+    color: #ffff;
+    border: 1px solid #ffff;
+    border-radius: 4px;
+    cursor:pointer;
+}
+.check:hover,.signup:hover{
+    background-color: rgba(250,250,250,0.3);
+}
+
+@keyframes text-load{
+    0%{
+        transform: translateY(-350%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.blocks1{
+    margin-top:3vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 45vh;
+}
+.block1{
+    width:40%;
+    background-color:#424242;
+    border-radius: 12px;
+
+}
+.reviewContainer{
+    height:100%;
+    margin-left: 2vw;
+}
+.reviewImage{
+    height:100%;
+}
+.subhead{
+    text-align: center;
+    font-size:4vw;
+    font-style: italic;
+    text-decoration: underline;
+    color: white;
+}
+.desc{
+    text-align: center;
+    font-size: 0.5vw;
+    color: white;
+}
+.blocks2{
+    margin-top:3vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 45vh;
+}
+.businessContainer{
+    height:100%;
+    margin-left: 2vw;
+}
+.business{
+    height:100%;
+}
+
+.containerTitle{
+    text-align: center;
+    margin-bottom: 2vw;
+}
+.choose{
+    font-size: 4vw;
+    color: black;
+}
+.block2{
+    width:40%;
+    height: 100%;
+    background-color:#424242;
+    border-radius: 12px;
+
+}
+.subhead{
+    text-align: center;
+    font-size:4vw;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.desc{
+    text-align: center;
+    font-size: 2vw;
+}
+
+.consolesContainer{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
+.xbox,.playstation,.PC{
+    justify-content: center;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding-right: 3vw;
+    padding-left: 3vw;
+    cursor: pointer;
+}
+.xbox:hover{
+    box-shadow: 8px 8px 8px 8px darkgreen;
+}
+.playstation:hover{
+    box-shadow: 8px 8px 8px 8px darkblue;
+}
+.xboxTitle{
+    text-align: center;
+    color: darkgreen;
+    font-size: 4vw;
+}
+.playstationTitle{
+    text-align: center;
+    color: darkblue;
+    font-size: 4vw;
+}
+.PCTitle{
+    text-align: center;
+    color: darkred;
+    font-size: 4vw;
+}
+.xboxLogo,.playstationLogo,.PCLogo{
+    width:100%;
+}
+
+.PC:hover{
+    box-shadow: 8px 8px 8px 8px darkred;
+}
+
+.slideshowContainer{
+    max-width: 1000px;
+    position: relative;
+    margin-top: 2vh;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.gameTitle{
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  left: 100px;
+}
+
+.dot{
+    height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+  }
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.finalPart{
+    position: relative;
+    align-content: center;
+}
+.finalHeader{
+    text-align: center;
+    height:60px;
+}
+.picsTitle{
+    font-size: 4vw;
+    line-height: 50px;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+    flex-wrap: nowrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+@media(max-width: 1024px){
+    .Combination{
+        height:30vh;
+        justify-content: center;
+    }
+    .blocks1,.blocks2{
+        margin-top: 1.5vh;
+        height:35vh;
+    }
+}
+
+@media(max-width: 768px){
+    .logoDiv{
+        width: 20%;
+        padding: 0px 0px;
+        margin-left: 10px;
+    }
+    .logo{
+        width:100%;
+    }
+    .blocks1,.blocks2{
+        margin-top: 1vh;
+        height:23vh;
+    }
+    .choose{
+        font-size: 24px;
+    }
+    .consolesContainer{
+        margin-right: 1.5vw;
+        margin-left: 1.5vw;
+    }
+    .playstation:hover{
+        box-shadow: 6px 6px 6px 6px darkblue;
+    }
+    .xbox:hover{
+        box-shadow: 6px 6px 6px 6px darkgreen;
+    }
+    .PC:hover{
+        box-shadow: 6px 6px 6px 6px darkred;
+    }
+    .picsTitle{
+        font-size: 24px;
+    }
+    .slideshowContainer{
+        margin-top: 0.3vh;
+        margin-bottom: -0.5vh;
+    }
+
+
+}
+
+@media(max-width: 660px){
+   .navMenu ul li{
+       font-size: 3.7vw;
+   }
+   .logoDiv{
+       width:20vw;
+   }
+}
+
+@media(max-width: 550px) {
+    .logoDiv{
+        width:15vw;
+        margin-left:3.5vw;
+    }
+
+}
+
+
